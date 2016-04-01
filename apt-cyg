@@ -382,7 +382,7 @@ function download {
   digest=$4
   case ${#digest} in
    32) hash=md5sum    ;;
-  128) hash=sha512sum ;;
+  128) hash=md5sum ;;
   esac
   mkdir -p "$cache/$mirrordir/$dn"
   cd "$cache/$mirrordir/$dn"
